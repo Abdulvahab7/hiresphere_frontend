@@ -1,16 +1,3 @@
-/**
- * api.js
- * Fetch-based replacement for the original axios instance (src/api.js).
- * Mirrors the same interface style used across the app: api.get/post/put/delete
- * each resolving to an object shaped like an axios response: { data, status }.
- *
- * Auth: automatically attaches "Authorization: Bearer <token>" from
- * localStorage on every request, exactly like the original axios interceptor.
- *
- * Errors: thrown errors carry a `response` property ({ status, data }) so
- * existing call sites written against axios's err.response.status /
- * err.response.data keep working unmodified.
- */
 const API_BASE_URL = 'https://hiresphere-backend-stvr.onrender.com/api';
 
 const api = {
