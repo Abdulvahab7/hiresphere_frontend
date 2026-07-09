@@ -12,7 +12,6 @@ function renderRegisterPage(container) {
           <select id="role" name="role">
             <option value="JOB_SEEKER" ${role === 'JOB_SEEKER' ? 'selected' : ''}>JOB_SEEKER</option>
             <option value="EMPLOYER" ${role === 'EMPLOYER' ? 'selected' : ''}>EMPLOYER</option>
-            <option value="ADMIN" ${role === 'ADMIN' ? 'selected' : ''}>ADMIN</option>
           </select>
 
           <label for="fullName">Full Name</label>
